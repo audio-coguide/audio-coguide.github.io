@@ -300,12 +300,12 @@
       <div class="content" style="max-width: 900px; margin: 0 auto;">
         <p>
         We consider the inverse problem of restoring recorded audio signals that are corrupted by a combination of unknown degradations.
-        Direct inversion is ill-posed since many audio samples can explain the same measurements. 
-        We adopt a diffusion-based posterior sampler to generate audio that is consistent with the degraded recordings.
+        Direct inversion is ill-posed since many audio samples can explain the same degraded measurements. 
+        To overcome this, we adopt a diffusion-based posterior sampler to generate audio that is consistent with the degraded recordings.
         While active research is in progress on generative inverse solvers, we find that the fully blind nature our problem poses new challenges in deriving a tractable likelihood score.
         We break-away from existing approaches, which either estimate or partially-approximate the forward operator, and instead reformulate the likelihood score in an embedding space learned via contrastive training.
         By noting that a surrogate form of the likelihood score in this embedding space is a valid approximation of the true likelihood score, we show that it possible to steer the denoising process towards the posterior.
-        We perform experiments on historical piano recordings and show that our model {\name} offers the promise of solving blind audio inverse problems via contrastive guidance.  
+        We perform experiments on historical piano recordings and show that our model <span style="font-weight: bold;">AudioCoGuide</span> offers the promise of solving blind audio inverse problems via contrastive guidance. 
         </p>
       </div>
     </div>
